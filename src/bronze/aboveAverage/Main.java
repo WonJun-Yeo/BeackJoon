@@ -22,7 +22,7 @@ public class Main {
 				sum += arr2[j];
 			}
 			
-			double avg = (double) sum / b;
+			double avg = (double) (sum / b);
 			
 			double num = 0;
 			
@@ -31,6 +31,8 @@ public class Main {
 					num++;
 				}
 			}
+			
+			arr1[i] = (num / b)*100;
 		}
 		
 		for (int j = 0; j < arr1.length; j++) {
