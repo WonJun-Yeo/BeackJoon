@@ -15,13 +15,13 @@ public class Main {
 			arr2[i] = a;
 		}
 		
-POS:	for (int i = 0; i < 28; i++) {
-			for (int j = 0; j < 30; j ++) {
-				if (arr1[j] == arr2[i]) {
+POS:	for (int i = 0; i < 30; i++) {
+			for (int j = 0; j < 28; j ++) {
+				if (arr1[i] == arr2[j]) {
 					continue POS;
 				}
 			}
-			
+			arr3.add(arr1[i]);
 		}
 		
 		for (int k : arr3) {
